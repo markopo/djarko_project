@@ -3,6 +3,6 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('<h2>DJARKO PROJECT!!!</h2>')
+    return render(request, 'pages/page.html')
 
 
