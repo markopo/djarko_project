@@ -10,19 +10,19 @@
 <body>
     <nav class="navbar is-warning is-fixed-top">
         <div class="navbar-brand">
-            <a href="#" class="navbar-item">
+            <a href="/" class="navbar-item">
               <h1 class="title" >Djarko Project</h1>
             </a>
         </div>
         <div class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="#">Home</a>
-                <a class="navbar-item" href="#">Services</a>
-                <a class="navbar-item" href="#">About</a>
+                <a class="navbar-item" href="/">Home</a>
+                <a class="navbar-item" href="/services">Services</a>
+                <a class="navbar-item" href="/about">About</a>
             </div>
         </div>
     </nav>
-    <section class="hero is-light is-fullheight is-fullheight-with-navbar">
+    <section class="hero is-light is-bold is-fullheight is-fullheight-with-navbar">
         <div class="hero-body">
             <div class="container">
                 {% block content %}
@@ -31,10 +31,6 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-         <div class="content has-text-centered">
-            <h4>Djarko Project</h4>
-         </div>
-    </footer>
+    <footer class="footer has-background-dark"></footer>
 </body>
 </html>

@@ -1,8 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2 class="title is-1">Content h1</h2>
     <div>
-        text...
+        <h2 class="title is-1">{{title}}</h2>
+        <small>{{last_update}}</small>
+        <div>
+            {% autoescape off %}
+            {{content}}
+            {% endautoescape %}
+        </div>
     </div>
 {% endblock content %}
