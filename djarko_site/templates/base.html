@@ -3,7 +3,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>
+        {% block title %}
+            Untitled document
+        {% endblock title %}
+    </title>
     <link href="{% static 'bulma.min.css' %}" rel="stylesheet" type="text/css" >
     <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css" >
 </head>
