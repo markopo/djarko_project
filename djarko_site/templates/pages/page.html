@@ -1,13 +1,24 @@
 {% extends "base.html" %}
 {% block title %} {{title}} {% endblock title %}
 {% block content %}
-    <div>
-        <h2 class="title is-1">{{title}}</h2>
-        <small>{{last_update}}</small>
-        <div>
-            {% autoescape off %}
-            {{content}}
-            {% endautoescape %}
+    <div class="columns">
+        <div class="column">
+                <div>
+                    <h2 class="title is-1">{{title}}</h2>
+                    <small>{{last_update}}</small>
+                    <div>
+                        {% autoescape off %}
+                        {{content}}
+                        {% endautoescape %}
+                    </div>
+                </div>
+            </div>
+        <div class="column" >
+            {% if photo_url != '' %}
+                <figure class="image">
+                    <img style="max-width:480px;width:{{ photo_width }}px;height:auto;" src="{{ photo_url }}">
+                </figure>
+            {% endif %}
         </div>
     </div>
 {% endblock content %}
