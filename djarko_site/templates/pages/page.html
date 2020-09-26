@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 {% block title %} {{title}} {% endblock title %}
+
+{% block links %}
+    {% for page in pages %}
+        <a class="navbar-item" href="{{ page.slug }}">{{page.title}}</a>
+    {% endfor %}
+{% endblock links %}
+
 {% block content %}
     <div class="columns">
         <div class="column">

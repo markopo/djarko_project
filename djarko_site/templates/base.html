@@ -20,9 +20,9 @@
         </div>
         <div class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="/">Home</a>
-                <a class="navbar-item" href="/services">Services</a>
-                <a class="navbar-item" href="/about">About</a>
+                {% block links %}
+                    <span></span>
+                {% endblock links %}
             </div>
         </div>
     </nav>
