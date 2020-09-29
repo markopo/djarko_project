@@ -18,7 +18,7 @@ class Page(models.Model):
         self.slug = slugify(self.title)
 
         if self.is_front_page:
-            pages = Page.objects.filter()
+            pages = Page.objects.all()
             for page in pages:
                 if page.id != self.id:
                     page.is_front_page = False
